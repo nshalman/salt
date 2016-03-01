@@ -136,8 +136,8 @@ sudo $MAKE install
 
 echo -n -e "\033]0;Build_Evn: libsodium\007"
 
-PKGURL="https://download.libsodium.org/libsodium/releases/libsodium-1.0.7.tar.gz"
-PKGDIR="libsodium-1.0.7"
+PKGURL="https://download.libsodium.org/libsodium/releases/libsodium-1.0.8.tar.gz"
+PKGDIR="libsodium-1.0.8"
 
 download $PKGURL
 
@@ -157,8 +157,8 @@ sudo $MAKE install
 
 echo -n -e "\033]0;Build_Evn: zeromq\007"
 
-PKGURL="http://download.zeromq.org/zeromq-4.1.3.tar.gz"
-PKGDIR="zeromq-4.1.3"
+PKGURL="http://download.zeromq.org/zeromq-4.1.4.tar.gz"
+PKGDIR="zeromq-4.1.4"
 
 download $PKGURL
 
@@ -178,13 +178,13 @@ sudo $MAKE install
 
 echo -n -e "\033]0;Build_Evn: OpenSSL\007"
 
-PKGURL="http://openssl.org/source/openssl-1.0.2f.tar.gz"
-PKGDIR="openssl-1.0.2f"
+PKGURL="http://openssl.org/source/openssl-1.0.2g.tar.gz"
+PKGDIR="openssl-1.0.2g"
 
 download $PKGURL
 
 echo "################################################################################"
-echo "Building OpenSSL 1.0.2f"
+echo "Building OpenSSL 1.0.2g"
 echo "################################################################################"
 cd $PKGDIR
 ./Configure darwin64-x86_64-cc --prefix=/opt/salt --openssldir=/opt/salt/openssl
